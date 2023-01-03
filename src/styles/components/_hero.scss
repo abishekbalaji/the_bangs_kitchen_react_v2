@@ -1,0 +1,91 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  // width: 100vw;
+  align-content: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.main-hero-mob {
+  width: 100%;
+  height: auto;
+}
+
+.main-hero-desk {
+  display: none;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $blue;
+  z-index: 1000;
+}
+
+.brand-logo {
+  margin: 0.8rem $m-size;
+}
+
+.hamburger-icon {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 5%;
+  background-color: $ivory;
+  margin: 0.8rem $m-size;
+  font-size: 2.3rem;
+  // margin-left: auto;
+  align-self: center;
+}
+
+@media (min-width: $mobile-landscape-breakpoint) {
+  
+}
+
+@media (min-width: 676px) {
+  .hamburger-icon {
+    display: none;
+  }
+  .brand-logo {
+    display: none;
+  }
+  .main-hero-mob {
+    display: none;
+  }
+  .main-hero-desk {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (min-width: $tablet-breakpoint) {
+  
+}
+
+@media (min-width: $desktop-breakpoint) {
+  
+}
+
+@media (min-width: $large-desktop-breakpoint) {
+  
+}
+
+

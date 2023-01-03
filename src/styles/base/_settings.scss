@@ -1,0 +1,22 @@
+// Colors
+$ivory: #fffff0;
+$ivory-shade: #e5e5d6;
+$ivory-shade-medium: #ccccbd;
+$ivory-shade-dark: #b3b3a5;
+$lavender: #e3e3f2;
+$lavender-dark: darken(
+  $color: $lavender,
+  $amount: 30%,
+);
+$blue: #1D3557;
+
+// Sizes
+
+$mobile-landscape-breakpoint: 576px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+$large-desktop-breakpoint: 1200px;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;

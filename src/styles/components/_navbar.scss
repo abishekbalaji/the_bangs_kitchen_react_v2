@@ -1,0 +1,155 @@
+.navbar-visible {
+  transform-origin: right;
+  transition: 0.5s;
+  transform: translateX(0);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  width: 70%;
+  background-color: $blue;
+  z-index: 4000;
+}
+
+.navbar__container__desk {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__items-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  margin: $m-size;
+  color: white;
+}
+
+.dropbtn {
+  color: white;
+}
+
+.dropbtn:hover {
+  color: yellow;
+}
+
+.nav__item:hover {
+  color: yellow;
+}
+
+.brand-logo-web {
+  display: none;
+}
+
+.navbar__close-btn {
+  // border: none;
+  width: fit-content;
+  border: none;
+  margin: $m-size;
+  background-color: white;
+  color: $blue;
+  font-weight: bold;
+  padding: 1rem $m-size;
+  border-radius: 9%;
+  margin-left: auto;
+}
+
+.navbar-invisible {
+  @extend .navbar-visible;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(2000px);
+}
+
+// Dropdown
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5001;
+}
+
+.navbar__dropdown__links {
+  color: $blue;
+  padding: 6px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.navbar__icon {
+  display: none;
+}
+
+.navbar__dropdown__links:hover {
+  color: white;
+  background-color: $blue;
+}
+
+.navbar__dropdown__links:hover .navbar__icon {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (min-width: $mobile-landscape-breakpoint) {
+}
+
+@media (min-width: 676px) {
+  .navbar {
+    width: 100%;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: 0s;
+    transform: translateX(0);
+    background-color: $blue;
+  }
+  .navbar__container__desk {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 $m-size;
+  }
+  .nav__items-div {
+    display: flex;
+    flex-direction: row;
+    // margin: auto;
+  }
+  .navbar__close-btn {
+    display: none;
+  }
+  .brand-logo-web {
+    display: inline-block;
+    margin: 0.6rem $m-size;
+  }
+  .nav__item {
+    align-self: center;
+  }
+
+  //Make dropdown visible
+}
+
+@media (min-width: $tablet-breakpoint) {
+}
+
+@media (min-width: $desktop-breakpoint) {
+}
+
+@media (min-width: $large-desktop-breakpoint) {
+}

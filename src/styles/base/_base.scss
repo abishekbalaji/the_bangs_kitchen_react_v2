@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  position:relative;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  z-index: 3000;
+  display: none;
+}
+
+.scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 45px;
+  right: 10px;
+  z-index: 99;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  /* padding: 15px; */
+  border-radius: 50%;
+  padding: 6px 8px;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+.scrollToTopBtn .material-icons {
+  font-size: 1.6rem;
+}
+
+.margin-y_remove {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.transparency {
+  background-color: rgba(227, 227, 242, 0.7) !important;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .scrollToTopBtn {
+    font-size: 1.4rem;
+    padding: 8px 10px;
+  }
+
+  .scrollToTopBtn .material-icons {
+    font-size: 1.8rem;
+  }
+}
+
